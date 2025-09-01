@@ -10,7 +10,7 @@ public class Solution {
 
         int n = sc.nextInt(); // Declare varaible to store the number of repetitions 
 
-        for ( int = i ; i <= n; i++) {
+        for ( int = i ; i < n; i++) {
             System.out.printLn("Hello World!");
         }
 
@@ -19,3 +19,38 @@ public class Solution {
     }
      
 }
+
+// Another Solution for it ussing bufferedReader
+
+
+    public class Solution {
+
+        public static void main (String[] args) {
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+            String line = br.nextLine;      // Reads an input Line  
+            int n = Integer.parseInt(line); // Parses the line into int 
+
+            for (int i = 0; i <= n; i++) 
+            System.out.printLn("Hello World!")
+        }
+    }
+
+
+
+/*
+    BufferedReader :
+        Designed mainly for reading text efficiently line by line 
+        Is generally faster because it just reads text and doesn’t do parsing unless you explicitly convert.
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+
+    Scanner : 
+        Designed for pasring input;
+        Is slower because it does extra work like tokenizing and parsing the input 
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+*/
