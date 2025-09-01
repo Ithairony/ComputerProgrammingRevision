@@ -1,0 +1,21 @@
+// Sample Problem Statement: Given an integer N, print 'hello world' N times. 
+
+// Solutions  
+
+public class Solution {
+
+    public static void main (String args[]) {
+        
+        Scanner sc = new Scanner(System.in); // Initialize Scanner 
+
+        int n = sc.nextInt(); // Declare varaible to store the number of repetitions 
+
+        for ( int = i ; i <= n; i++) {
+            System.out.printLn("Hello World!");
+        }
+
+        sc.close(); // Close scanner so data is not lost 
+
+    }
+     
+}
