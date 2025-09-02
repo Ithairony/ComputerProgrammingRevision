@@ -143,3 +143,26 @@ public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
         return resultArray;
     }
 }
+
+/*
+    List Interface 
+        - Maintains insertion order
+        - Allows duplicate elements
+        - Supports null elements (implementation dependent)
+        - Provides index-based access
+        - Supports bi-directional traversal via ListIterator
+
+    How to use a list : 
+
+    List<Type> list = new ArrayList<Type>();
+
+    Methods of List class :
+        add(Object o)
+        add(int index, Object o)
+        set(int index, Object o)
+        indexOf(Object o)
+        lastIndexOf(Object o)
+        remove(Object o) 
+        remove(int index)
+        get(int index)
+        contains(Object o)
