@@ -181,3 +181,5 @@ public static int diagonalDifference(List<List<Integer>> arr ) {
         System.out.println();
         }
     }
+
+// For staircase patterns you gotta print empty spaces and then print the desired character.
