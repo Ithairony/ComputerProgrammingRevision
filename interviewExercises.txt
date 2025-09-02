@@ -123,26 +123,26 @@ public static int diagonalDifference(List<List<Integer>> arr ) {
 
 // Write a program that compares values between two ArrayList
 
-public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
-        int n = a.size();
-        int sumA = 0;
-        int sumB = 0;
-        List<Integer> resultArray = new ArrayList<>();
+    public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+            int n = a.size();
+            int sumA = 0;
+            int sumB = 0;
+            List<Integer> resultArray = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            if (a.get(i) > b.get(i)) {
-                sumA++;
-            } else if (b.get(i) > a.get(i)) {
-                sumB++;
+            for (int i = 0; i < n; i++) {
+                if (a.get(i) > b.get(i)) {
+                    sumA++;
+                } else if (b.get(i) > a.get(i)) {
+                    sumB++;
+                }
             }
-        }
 
-        resultArray.add(sumA);
-        resultArray.add(sumB);
+            resultArray.add(sumA);
+            resultArray.add(sumB);
 
-        return resultArray;
+            return resultArray;
     }
-}
+
 
 /*
     List Interface 
@@ -166,3 +166,18 @@ public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
         remove(int index)
         get(int index)
         contains(Object o)
+
+
+// Write a program that prints a staircase of size n 
+
+    public static void staircase(int n) {
+        for ( int i = 1; i <= n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < i; k++) {
+                System.out.print("#");
+            }
+        System.out.println();
+        }
+    }
