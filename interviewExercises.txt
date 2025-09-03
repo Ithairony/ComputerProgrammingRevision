@@ -183,3 +183,26 @@ public static int diagonalDifference(List<List<Integer>> arr ) {
     }
 
 // For staircase patterns you gotta print empty spaces and then print the desired character.
+
+public static void miniMaxSum(List<Integer> arr) {
+        long total = 0;
+        int n = arr.size();
+        int min = arr.get(0);
+        int max = arr.get(0);
+        
+        for (int i = 0; i < n; i++) {
+            int num = arr.get(i);
+            total += num;
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+        }
+        long minSum = total - max;
+        long maxSum = total - min;
+
+    System.out.println(minSum + " " + maxSum);
+
+    }
